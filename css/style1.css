@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.container {
+  margin: 40px auto;
+  width: 450px;
+  
+}
+
+h1 {
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+  
+h5 {
+    border-bottom: 2px solid rgb(255, 0, 21);
+    padding-bottom: 3px;
+    margin: 30px 0 10px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h4 {
+  border-bottom: 2px solid rgb(0, 102, 255);
+  padding-bottom: 3px;
+  margin: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+
+h3 {
+  border-bottom: 2px solid rgb(32, 250, 3);
+  padding-bottom: 3px;
+  margin: 30px 0 10px;
+}
+
+.inc-exp-tracker {
+  background-color: rgba(0, 245, 130, 0.320);
+  box-shadow: var(--box-shadow);
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.inc-exp-tracker > div {
+  flex: 2;
+  text-align: center;
+  
+}
+
+.inc-exp-tracker > div:first-of-type {
+  border-right: 1px solid #ffffff;
+  right: 50%;
+  margin-right: -3px;
+  top: 0;
+  
+}
+
+.inflow1 {
+  color: #1b8311dc;
+  font-size: 23px;
+  padding: 10px;
+  width: 20%;
+}
+
+.outflow1 {
+  color: #ff0000;
+  font-size: 23px;
+  padding: 10px;
+  width: 20%;
+}
+
+label {
+  display: inline-block;
+  margin: 11px 0;
+  
+}
+
+input[type='text'],
+input[type='date'],
+input[type='button'],
+input[type='number'] {
+  border: 1px solid #2a4aff;
+  border-radius: 5px;
+  display: block;
+  font-size: 14px;
+  padding: 11px;
+  width: 100%;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #ff0000a6;
+  box-shadow: var(--box-shadow);
+  color: rgb(255, 255, 255);
+  border: 1px solid #2a4aff;
+  border: 23;
+  display: block;
+  font-size: 15px;
+  margin: 40px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.button:focus,
+.delete-button:focus {
+  outline: 0;
+}
+
+.lists {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 45px;
+    
+  }
+  
+  .lists li {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .lists li.plus {
+    border-left: 5px solid #3bee00;
+  }
+  
+  .lists li.minus {
+    border-left: 5px solid #ff0000;
+  }
+
+  .delete-button {
+    cursor: pointer;
+    background-color: #e74c3c;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .lists li:hover .delete-button {
+  opacity: 1;
+}
+
+.chart {
+  position: absolute;
+  right: 0px;
+  width:200px; 
+  height:1200px;
+}
