@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 125%;
+  background-image: url(../image/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.login {
+  width: 35%;
+  margin: 51px auto 0px;
+  color: rgb(245, 240, 240);
+  border-bottom: none;
+  border: 1px solid #166cdd;
+  border-radius: 15px 15px 0px 0px;
+  padding: 25px;
+  background: #00ffea65;
+  text-align: center;
+
+}
+form, .content {
+  width: 35%;
+  margin: 0px auto;
+  border: 1px solid #166cdd;
+  background: rgba(255, 255, 255, 0.329);
+  border-radius: 0px 0px 15px 15px;
+  padding: 25px;
+ 
+}
+.details {
+  margin: 10px 0px 10px 0px;
+}
+.details label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.details input {
+  height: 30px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 97%;
+  padding: 5px 10px;
+
+}
+.btn {
+  padding: 12px;
+  font-size: 15px;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  
+}
+
+.success {
+  color: #13e416; 
+  background: #dff0d8; 
+  margin-bottom: 20px;
+  border: 1px solid #2d7e2e;
+
+}
+
+.error {
+  width: 92%;
+  border-radius: 4px; 
+  background: #f2dede; 
+  text-align: left; 
+  margin: 0px auto; 
+  padding: 12px; 
+  color: #aa110e; 
+  border: 1px solid #0084ff; 
+
+}
